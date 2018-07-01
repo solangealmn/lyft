@@ -1,3 +1,312 @@
 /*
- * Estilos de tu proyecto
- */
+* Estilos de tu proyecto
+*/
+  html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  .header{
+    background:
+      /* top, transparent red, faked with gradient */
+      linear-gradient(
+      rgba(55, 31, 109, 0.45) 85%,
+      rgb(109, 39, 138)
+      ),
+      /* bottom, image */
+      url(../assets/images/hero.gif);
+    background-repeat: no-repeat;
+    background-position: top 65% center;
+    background-size: cover;
+    height: 700px;
+  }
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px 55px;
+  }
+  .menu-links{
+    list-style: none;
+    margin: 23px 125px 0 0;
+    font-size: 18px;
+  }
+  .menu-links li{
+    display: inline-block;
+    margin: 2px 0 0 25px;
+  }
+  .btn-login{
+    border-radius: 6px;
+    padding: 10px 18px;
+    border: 1px solid #fff;
+  }
+  a.btn-login:hover{
+    background-color: #FF00BF;
+    border-color:#FF00BF;
+  }
+  .menu-links li a{
+    color: #fff;
+  }
+  .menu img{
+    width: 96px;
+    padding: 16px;
+  }
+  .turn-miles-container{
+    background-color: #fff;
+    position: absolute;
+    top: 19%;
+    right: 1px;
+    width: 40%;
+    height: 450px;
+    padding: 30px 60px;
+  }
+  .main-title, .main-subtitle{
+    color: #352384;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .main-title{
+    font-size: 40px;
+    margin: 30px 0 0 0;
+  }
+  .main-title span{
+    letter-spacing: -2px;
+  }
+  .main-subtitle{
+    font-size: 25px;
+    margin: 25px 0 22px 0;;
+    letter-spacing: -1px;
+  }
+  form{
+    margin-bottom: 34px;
+  }
+  form input{
+    margin-bottom: 30px;
+    height: 34px;
+    border: none;
+    border-bottom: 1px solid #37288d;
+    width: 100%;
+    color: #acaba9;
+  }
+  .btn-driver{
+    border-radius: 6px;
+    padding: 10px 18px;
+    background-color: #ff00be;
+    border: none;
+    color: #fff;
+    margin: -5px 20px 0 2px;
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .btn-driver:hover{
+    width: 180px;
+    height: 45px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: #FF00BF;
+  }
+  .btn-ride{
+    text-decoration: underline;
+    color: #7c7e95;
+    font-size: 19px;
+    margin: 0 0 0 4px;
+  }
+  .turn-miles-container p{
+    font-size: 14px;
+    color: #728099;
+    margin: 10px 0 0 0;
+  }
+  .turn-miles-container a{
+    color: #728099;
+    text-decoration: none;
+  }
+  .turn-miles-container a:hover{
+    color: #FF00BF;
+    text-decoration: underline;
+  }
+  .show-app{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:
+      linear-gradient(
+        rgb(109, 39, 138),
+        rgb(55, 31, 109)
+      );
+    padding: 45px 120px;
+  }
+  .benefits{
+    width: 40%;
+    color: #fff;
+    position: relative;
+    bottom: 53px;
+    right: 5px;
+  }
+  .subtitle{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 0;
+  }
+  .benefits p{
+    font-size: 16px;
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+  }
+  .service{
+    width: 40%;
+    position: relative;
+    bottom: 21px;
+    right: 13px;
+  }
+  .service img{
+    width: 530px;
+  }
+  .videos{
+    display: flex;
+    flex-flow: column;
+  }
+  .theme{
+    display: flex;
+    justify-content: space-around;
+    height: 568px
+  }
+  .watch{
+    width: 33%;
+    padding: 50px;
+  }
+  .watch p{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .p-bold{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+  }
+  .themes-titles{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+  }
+  .theme iframe{
+    width: 68%;
+    height: 568px;
+  }
+  footer{
+    background-color: #333447;
+    color: #fff;
+    padding: 40px 50px;
+  }
+  footer ul{
+    list-style: none;
+  }
+  footer ul li a{
+    color: #fff;
+  }
+  .top-list{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+    align-content: center;
+    padding: 0 2px;
+  }
+  .top-list ul li{
+    padding: 10px;
+    margin: 5px 0 15px 4px;
+    font-size: 17px;
+  }
+  .top-list ul li:first-child{
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .top-list ul li a{
+    text-decoration: none;
+  }
+  .top-list ul li a:hover{
+    text-decoration: none;
+    color: #FF00BF;
+  }
+  .stamp-list {
+    width: 25%;
+    padding: 30px 0
+  }
+  .stamp-list img{
+    width: 160px;
+  }
+  .down-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0 0 0;
+  }
+  .down-list ul{
+    margin: 24px 0 0 0;
+  }
+  .down-list ul li{
+    display: inline-block;
+    margin: 0 60px 0 0;
+  }
+  i.fa-facebook-f{
+    border-radius: 50%;
+    padding: 6px 10px;
+    border: 2px solid #fff;
+    font-size: 16px;
+  }
+  i.fa-instagram{
+    border-radius: 50%;
+    padding: 6px;
+    border: 2px solid #fff;
+    font-size: 20px;
+  }
+  i.fa-twitter{
+    border-radius: 50%;
+    padding: 6px;
+    border: 2px solid #fff;
+    font-size: 17px;
+  }
+  i.fa-facebook-f:hover{
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #FF00BF;
+  }
+  i.fa-instagram:hover{
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #FF00BF;
+  }
+  i.fa-twitter:hover{
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #FF00BF;
+  }
+  .line{
+    width: 65%;
+    height: 2px;
+    margin: 25px 0 0 0;
+  }
+  .down-list p{
+    font-size: 15px;
+    margin: 32px 0 0 0;
+  }
