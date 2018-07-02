@@ -1,32 +1,32 @@
 /*
 * Estilos de tu proyecto
 */
-  html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-  }
-  body{
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-  }
-  a{
-    text-decoration: none;
-  }
-  .header{
-    background:
-      /* top, transparent red, faked with gradient */
-      linear-gradient(
-      rgba(55, 31, 109, 0.45) 85%,
-      rgb(109, 39, 138)
-      ),
-      /* bottom, image */
-      url(../assets/images/hero.gif);
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.header{
+  background:
+  /* top, transparent red, faked with gradient */
+  linear-gradient(
+    rgba(55, 31, 109, 0.45) 85%,
+    rgb(109, 39, 138)
+    ),
+    /* bottom, image */
+    url(../assets/images/hero.gif);
     background-repeat: no-repeat;
     background-position: top 65% center;
     background-size: cover;
@@ -39,6 +39,17 @@
     color: #fff;
     padding: 10px 55px;
   }
+  .img-logo{
+    background: url(../assets/images/logo-white.png) no-repeat;
+    background-size: 100% 100%;
+    width: 75px;
+    height: 100%;
+    margin-top: 15px;
+  }
+  .img-logo:hover{
+    background: url(../assets/images/logo-pink.png) no-repeat;
+    background-size: 100% 100%;
+  }
   .menu-links{
     list-style: none;
     margin: 23px 125px 0 0;
@@ -48,6 +59,16 @@
     display: inline-block;
     margin: 2px 0 0 25px;
   }
+  .menu-links li a{
+    color: #fff;
+    padding: 10px;
+  }
+  .menu-links li a:hover{
+    color: #FF00BF;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+  }
   .btn-login{
     border-radius: 6px;
     padding: 10px 18px;
@@ -56,13 +77,6 @@
   a.btn-login:hover{
     background-color: #FF00BF;
     border-color:#FF00BF;
-  }
-  .menu-links li a{
-    color: #fff;
-  }
-  .menu img{
-    width: 96px;
-    padding: 16px;
   }
   .turn-miles-container{
     background-color: #fff;
@@ -149,164 +163,164 @@
     justify-content: space-around;
     align-items: center;
     background-image:
-      linear-gradient(
-        rgb(109, 39, 138),
-        rgb(55, 31, 109)
+    linear-gradient(
+      rgb(109, 39, 138),
+      rgb(55, 31, 109)
       );
-    padding: 45px 120px;
-  }
-  .benefits{
-    width: 40%;
-    color: #fff;
-    position: relative;
-    bottom: 53px;
-    right: 5px;
-  }
-  .subtitle{
-    text-transform: uppercase;
-    font-size: 28px;
-    margin-top: 0;
-  }
-  .benefits p{
-    font-size: 16px;
-    margin: 0 0 30px 0;
-    line-height: 1.5;
-  }
-  .service{
-    width: 40%;
-    position: relative;
-    bottom: 21px;
-    right: 13px;
-  }
-  .service img{
-    width: 530px;
-  }
-  .videos{
-    display: flex;
-    flex-flow: column;
-  }
-  .theme{
-    display: flex;
-    justify-content: space-around;
-    height: 568px
-  }
-  .watch{
-    width: 33%;
-    padding: 50px;
-  }
-  .watch p{
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .p-bold{
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 0 0 0;
-  }
-  .themes-titles{
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 0 0 0;
-  }
-  .theme iframe{
-    width: 68%;
-    height: 568px;
-  }
-  footer{
-    background-color: #333447;
-    color: #fff;
-    padding: 40px 50px;
-  }
-  footer ul{
-    list-style: none;
-  }
-  footer ul li a{
-    color: #fff;
-  }
-  .top-list{
-    display: flex;
-    flex-flow: row;
-    justify-content:space-around;
-    align-content: center;
-    padding: 0 2px;
-  }
-  .top-list ul li{
-    padding: 10px;
-    margin: 5px 0 15px 4px;
-    font-size: 17px;
-  }
-  .top-list ul li:first-child{
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-  .top-list ul li a{
-    text-decoration: none;
-  }
-  .top-list ul li a:hover{
-    text-decoration: none;
-    color: #FF00BF;
-  }
-  .stamp-list {
-    width: 25%;
-    padding: 30px 0
-  }
-  .stamp-list img{
-    width: 160px;
-  }
-  .down-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 24px 0 0 0;
-  }
-  .down-list ul{
-    margin: 24px 0 0 0;
-  }
-  .down-list ul li{
-    display: inline-block;
-    margin: 0 60px 0 0;
-  }
-  i.fa-facebook-f{
-    border-radius: 50%;
-    padding: 6px 10px;
-    border: 2px solid #fff;
-    font-size: 16px;
-  }
-  i.fa-instagram{
-    border-radius: 50%;
-    padding: 6px;
-    border: 2px solid #fff;
-    font-size: 20px;
-  }
-  i.fa-twitter{
-    border-radius: 50%;
-    padding: 6px;
-    border: 2px solid #fff;
-    font-size: 17px;
-  }
-  i.fa-facebook-f:hover{
-    border: 2px solid #fff;
-    background-color: #fff;
-    color: #FF00BF;
-  }
-  i.fa-instagram:hover{
-    border: 2px solid #fff;
-    background-color: #fff;
-    color: #FF00BF;
-  }
-  i.fa-twitter:hover{
-    border: 2px solid #fff;
-    background-color: #fff;
-    color: #FF00BF;
-  }
-  .line{
-    width: 65%;
-    height: 2px;
-    margin: 25px 0 0 0;
-  }
-  .down-list p{
-    font-size: 15px;
-    margin: 32px 0 0 0;
-  }
+      padding: 45px 120px;
+    }
+    .benefits{
+      width: 40%;
+      color: #fff;
+      position: relative;
+      bottom: 53px;
+      right: 5px;
+    }
+    .subtitle{
+      text-transform: uppercase;
+      font-size: 28px;
+      margin-top: 0;
+    }
+    .benefits p{
+      font-size: 16px;
+      margin: 0 0 30px 0;
+      line-height: 1.5;
+    }
+    .service{
+      width: 40%;
+      position: relative;
+      bottom: 21px;
+      right: 13px;
+    }
+    .service img{
+      width: 530px;
+    }
+    .videos{
+      display: flex;
+      flex-flow: column;
+    }
+    .theme{
+      display: flex;
+      justify-content: space-around;
+      height: 568px
+    }
+    .watch{
+      width: 33%;
+      padding: 50px;
+    }
+    .watch p{
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    .p-bold{
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 0 0;
+    }
+    .themes-titles{
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 0 0;
+    }
+    .theme iframe{
+      width: 68%;
+      height: 568px;
+    }
+    footer{
+      background-color: #333447;
+      color: #fff;
+      padding: 40px 50px;
+    }
+    footer ul{
+      list-style: none;
+    }
+    footer ul li a{
+      color: #fff;
+    }
+    .top-list{
+      display: flex;
+      flex-flow: row;
+      justify-content:space-around;
+      align-content: center;
+      padding: 0 2px;
+    }
+    .top-list ul li{
+      padding: 10px;
+      margin: 5px 0 15px 4px;
+      font-size: 17px;
+    }
+    .top-list ul li:first-child{
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+    .top-list ul li a{
+      text-decoration: none;
+    }
+    .top-list ul li a:hover{
+      text-decoration: none;
+      color: #FF00BF;
+    }
+    .stamp-list {
+      width: 25%;
+      padding: 30px 0
+    }
+    .stamp-list img{
+      width: 160px;
+    }
+    .down-list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 24px 0 0 0;
+    }
+    .down-list ul{
+      margin: 24px 0 0 0;
+    }
+    .down-list ul li{
+      display: inline-block;
+      margin: 0 60px 0 0;
+    }
+    i.fa-facebook-f{
+      border-radius: 50%;
+      padding: 6px 10px;
+      border: 2px solid #fff;
+      font-size: 16px;
+    }
+    i.fa-instagram{
+      border-radius: 50%;
+      padding: 6px;
+      border: 2px solid #fff;
+      font-size: 20px;
+    }
+    i.fa-twitter{
+      border-radius: 50%;
+      padding: 6px;
+      border: 2px solid #fff;
+      font-size: 17px;
+    }
+    i.fa-facebook-f:hover{
+      border: 2px solid #fff;
+      background-color: #fff;
+      color: #FF00BF;
+    }
+    i.fa-instagram:hover{
+      border: 2px solid #fff;
+      background-color: #fff;
+      color: #FF00BF;
+    }
+    i.fa-twitter:hover{
+      border: 2px solid #fff;
+      background-color: #fff;
+      color: #FF00BF;
+    }
+    .line{
+      width: 65%;
+      height: 2px;
+      margin: 25px 0 0 0;
+    }
+    .down-list p{
+      font-size: 15px;
+      margin: 32px 0 0 0;
+    }
